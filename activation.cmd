@@ -1,57 +1,39 @@
 @echo off
 :init
-cls
-title Activate
+title Windows 10/11 activator
+set r=set var=999
 
-:start
-echo Choose os
+:menu
+%r%
+cls
+echo Choose your Windows version
 echo.
-echo 1.Win 10/11 Pro
-echo 2.Win 10/11 Pro for workstations
-echo 3.Win 10/11 for educational institutions
-echo 4.Win 10/11 Corporate
+echo 1. Pro
+echo 2. Pro for Workstations
+echo 3. Education
+echo 4. Enterprise
 echo.
-echo 0.Exit
+echo 0. Exit
 set /p var=Type some number : 
-if %var% == 1 goto pro
-if %var% == 2 goto workst
-if %var% == 3 goto educate
-if %var% == 4 goto corporate
+if %var% == 1 call :activate W269N-WFGWX-YVC9B-4J6C9-T83GX
+if %var% == 2 call :activate NRG8B-VKK3Q-CXVCJ-9G2XF-6Q84J
+if %var% == 3 call :activate 6TP4R-GNPTD-KYYHQ-7B7DP-J447Y
+if %var% == 4 call :activate NPPR9-FWDCX-D2C8J-H872K-2YT43
 if %var% == 0 exit
-goto start
+goto menu
 
-:pro
+:activate
 cls
-title pro
-echo Activate Win 10/11 Pro
-slmgr/ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
-timeout /T 1 /NOBREAK>nul
-slmgr /skms kms.digiboy.ir
-goto exit
-
-:workst
+echo Popups may appear during activation, so you should close them to complete activation.
+echo Please wait...
+title Activating... - 0%%  & slmgr /ipk %1
+title Activating... - 33%% & slmgr /skms kms.digiboy.ir
+title Activating... - 66%% & slmgr /ato
+title Windows 10/11 activator
 cls
-title Pro for workstations
-echo Activate Win 10/11 Pro
-slmgr/ipk NRG8B-VKK3Q-CXVCJ-9G2XF-6Q84J
-timeout /T 1 /NOBREAK>nul
-slmgr /skms kms.digiboy.ir
-goto exit
-
-:educate
-cls
-title for educational institutions 
-echo Activate Win 10/11 for educational institutions
-slmgr/ipk 6TP4R-GNPTD-KYYHQ-7B7DP-J447Y
-timeout /T 1 /NOBREAK>nul
-slmgr /skms kms.digiboy.ir
-goto exit
-
-:corporate
-cls
-title for corporate
-echo Win 10/11 Corporate
-slmgr/ipk NPPR9-FWDCX-D2C8J-H872K-2YT43
-timeout /T 1 /NOBREAK>nul
-slmgr /skms kms.digiboy.ir
-goto exit
+echo Windows activated successfully!
+echo If it isn't, try to choose diffrent vesrion from the menu of this program.
+echo.
+echo Press any key to quit...
+pause >nul
+exit
