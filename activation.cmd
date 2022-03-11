@@ -31,7 +31,7 @@ goto exit
 
 :workst
 cls
-title Pro ^for workstations
+title Pro for workstations
 echo Activate Win 10/11 Pro
 slmgr/ipk NRG8B-VKK3Q-CXVCJ-9G2XF-6Q84J
 timeout /T 1 /NOBREAK>nul
@@ -40,7 +40,7 @@ goto exit
 
 :educate
 cls
-title ^for educational institutions 
+title for educational institutions 
 echo Activate Win 10/11 for educational institutions
 slmgr/ipk 6TP4R-GNPTD-KYYHQ-7B7DP-J447Y
 timeout /T 1 /NOBREAK>nul
@@ -49,7 +49,7 @@ goto exit
 
 :corporate
 cls
-title ^for corporate
+title for corporate
 echo Win 10/11 Corporate
 slmgr/ipk NPPR9-FWDCX-D2C8J-H872K-2YT43
 timeout /T 1 /NOBREAK>nul
