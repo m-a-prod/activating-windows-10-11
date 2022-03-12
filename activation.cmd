@@ -10,13 +10,11 @@ echo Choose your Windows version
 echo.
 echo 1. Windown 10/11
 echo 2. Windows 8/8.1
-echo 3. Windows 7
 echo.
 echo 0. Exit
 set /p var=Type some number : 
 if %var% == 1 goto win1011
 if %var% == 2 goto win8ch
-if %var
 if %var% == 0 exit
 goto menu
 
