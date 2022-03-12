@@ -10,11 +10,13 @@ echo Choose your Windows version
 echo.
 echo 1. Windown 10/11
 echo 2. Windows 8/8.1
+echo 3. Windows 7
 echo.
 echo 0. Exit
 set /p var=Type some number : 
 if %var% == 1 goto win1011
 if %var% == 2 goto win8ch
+if %var% == 3 goto win7
 if %var% == 0 exit
 goto menu
 
@@ -86,6 +88,21 @@ if %var% == 2 call :activate MHF9N-XY6XB-WVXMC-BTDCT-MKKG7
 if %var% == 0 goto win8ch
 goto win81
 
+:win7
+%r%
+cls
+title Windows 7
+echo Choose your Windows 7 version
+echo.
+echo 1. Professional
+echo 2. Enterprise
+echo.
+echo 0. Back
+set /p var=Type some number : 
+if %var% == 1 call :activate FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4
+if %var% == 2 call :activate 33PXH-7Y6KF-2VJC9-XBBR8-HVTHH
+if %var% == 0 goto menu
+goto win7
 :activate
 cls
 echo Popups may appear during activation, so you should close them to complete activation.
