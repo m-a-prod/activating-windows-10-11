@@ -11,14 +11,31 @@ echo.
 echo 1. Windown 10/11
 echo 2. Windows 8/8.1
 echo 3. Windows 7
+echo 4. Windows Server 2022
 echo.
 echo 0. Exit
 set /p var=Type some number : 
 if %var% == 1 goto win1011
 if %var% == 2 goto win8ch
 if %var% == 3 goto win7
+if %var% == 4 goto winserver2022
 if %var% == 0 exit
 goto menu
+
+:winserver2022
+%r%
+cls
+echo Chose your Windows Server 2022 version
+echo.
+echo 1. Datacenter
+echo 2. Standart
+echo.
+echo 0. Back
+set /p var=Type some number : 
+if %var% == 1 call :activate WX4NM-KYWYW-QJJR4-XV3QB-6VM33
+if %var% == 2 call :activate VDYBN-27WPP-V4HQT-9VMD4-VMK7H
+if %var% == 0 goto menu
+goto winserver2022
 
 :win1011
 %r%
@@ -103,6 +120,7 @@ if %var% == 1 call :activate FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4
 if %var% == 2 call :activate 33PXH-7Y6KF-2VJC9-XBBR8-HVTHH
 if %var% == 0 goto menu
 goto win7
+
 :activate
 cls
 echo Popups may appear during activation, so you should close them to complete activation.
