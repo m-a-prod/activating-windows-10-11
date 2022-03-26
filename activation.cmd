@@ -13,12 +13,14 @@ echo 2. Windows 8/8.1
 echo 3. Windows 7
 echo 4. Windows Server 2022
 echo.
+echo 5. Our GitHub
 echo 0. Exit
 set /p var=Type some number : 
 if %var% == 1 goto win1011
 if %var% == 2 goto win8ch
 if %var% == 3 goto win7
 if %var% == 4 goto winserver2022
+if %var% == 5 start https://github.com/maxim-adaev-production/activating-windows-10-11
 if %var% == 0 exit
 goto menu
 
