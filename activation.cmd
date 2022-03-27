@@ -138,5 +138,3 @@ echo.
 echo Press any key to quit...
 pause >nul
 exit
-
-:exit
