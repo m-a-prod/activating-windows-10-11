@@ -106,7 +106,7 @@ echo 0. Back
 set /p var=Type some number : 
 if "%var%" == "1" call :activate GCRJD-8NW9H-F2CDX-CCM8D-9D6T9
 if "%var%" == "2" call :activate MHF9N-XY6XB-WVXMC-BTDCT-MKKG7
-if "%var%" == "0" call goto :eof
+if "%var%" == "0" call :eof
 goto win81
 
 :win7
